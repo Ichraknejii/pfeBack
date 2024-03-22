@@ -45,7 +45,7 @@ return authProvider;
 
     @Bean     // Crée un gestionnaire d'authentification qui est le point central de l'authentification dans Spring Security.
 
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
+    public AuthenticationManager authenticationManager(@org.jetbrains.annotations.NotNull AuthenticationConfiguration config) throws Exception {
         return config.getAuthenticationManager();
 
     }
